@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import { useState, useEffect } from "react";
 import axios from "axios"; 
+import "./index.css"; 
+
 let num1 = 0;
 
 
@@ -100,7 +102,10 @@ setCityName(e.target.value)
 
 <div>
 <div>Weather Of {weather?.name}</div>
-<div>Current Temp {weather?.main?.temp}</div>
+<div>Current Temp {weather?.main?.temp}°</div>
+<div>Humidity {weather?.main?.humidity}°</div>
+<div>Minimum {weather?.main?.temp_min}°-Maximum {weather?.main?.temp_max}°</div>
+
 </div>
 :
 null
